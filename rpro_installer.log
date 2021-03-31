@@ -1,0 +1,184 @@
+<13>Mar 30 17:44:39 root: =====================================
+<13>Mar 30 17:44:39 root: NEW INSTALLER SESSION
+<13>Mar 30 17:44:39 root: Distribution: Ubuntu
+<13>Mar 30 17:44:39 root: Version: 16.04
+<13>Mar 30 17:44:39 root: Kernel: 64 Bit
+<13>Mar 30 17:44:39 root: Total Memory: 32158 (MB)
+<13>Mar 30 17:44:39 root: Free Memory: 30583 (mb)
+<13>Mar 30 17:44:39 root: Home directory: /root /usr/sbin /bin /dev /bin /usr/games /var/cache/man /var/spool/lpd /var/mail /var/spool/news /var/spool/uucp /bin /var/www /var/backups /var/list /var/run/ircd /var/lib/gnats /nonexistent /run/systemd /run/systemd/netif /run/systemd/resolve /run/systemd /home/syslog /nonexistent /var/lib/lxd/ /var/run/dbus /run/uuidd /var/lib/misc /var/run/sshd /home/fernando /var/lib/colord /home/ntp
+<13>Mar 30 17:44:39 root: BackUp directory: /root /usr/sbin /bin /dev /bin /usr/games /var/cache/man /var/spool/lpd /var/mail /var/spool/news /var/spool/uucp /bin /var/www /var/backups /var/list /var/run/ircd /var/lib/gnats /nonexistent /run/systemd /run/systemd/netif /run/systemd/resolve /run/systemd /home/syslog /nonexistent /var/lib/lxd/ /var/run/dbus /run/uuidd /var/lib/misc /var/run/sshd /home/fernando /var/lib/colord /home/ntp/red5pro_backups
+<13>Mar 30 17:44:39 root: Install directory: /usr/local/red5pro
+<13>Mar 30 17:44:39 root: Downloads directory: /root/red5pro-installer/tmp
+<13>Mar 30 17:44:39 root: OS TYPE DEBIAN
+<13>Mar 30 17:44:43 root: Basic mode selected
+<13>Mar 30 17:44:47 root: Starting Letsencrypt SSL Installer
+<13>Mar 30 17:44:49 root: Downloading letsencrypt ssl cert generator
+<13>Mar 30 17:44:57 root: Red5 Pro will be stopped temporarily (If running), for the Letsencrypt SSL challenge to complete successfully!.
+<13>Mar 30 17:45:03 root: Red5 Pro service was found at /lib/systemd/system/red5pro.service.
+<13>Mar 30 17:45:03 root: Attempting to stop Red5 Pro service
+<13>Mar 30 17:45:03 root: Server is not running!
+<13>Mar 30 17:45:03 root: Preparing letsencrypt
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  certbot [SUBCOMMAND] [options] [-d DOMAIN] [-d DOMAIN] ...
+
+Certbot can obtain and install HTTPS/TLS/SSL certificates.  By default,
+it will attempt to use a webserver both for obtaining and installing the
+certificate. The most common SUBCOMMANDS and flags are:
+
+obtain, install, and renew certificates:
+    (default) run   Obtain & install a certificate in your current webserver
+    certonly        Obtain or renew a certificate, but do not install it
+    renew           Renew all previously obtained certificates that are near
+expiry
+    enhance         Add security enhancements to your existing configuration
+   -d DOMAINS       Comma-separated list of domains to obtain a certificate for
+
+  (the certbot apache plugin is not installed)
+  --standalone      Run a standalone webserver for authentication
+  (the certbot nginx plugin is not installed)
+  --webroot         Place files in a server's webroot folder for authentication
+  --manual          Obtain certificates interactively, or using shell script
+hooks
+
+   -n               Run non-interactively
+  --test-cert       Obtain a test certificate from a staging server
+  --dry-run         Test "renew" or "certonly" without saving any certificates
+to disk
+
+manage certificates:
+    certificates    Display information about certificates you have from Certbot
+    revoke          Revoke a certificate (supply --cert-path)
+    delete          Delete a certificate
+
+manage your account with Let's Encrypt:
+    register        Create a Let's Encrypt ACME account
+  --agree-tos       Agree to the ACME server's Subscriber Agreement
+   -m EMAIL         Email address for important account notifications
+
+More detailed help:
+
+  -h, --help [TOPIC]    print this message, or detailed help on a topic;
+                        the available TOPICS are:
+
+   all, automation, commands, paths, security, testing, or any of the
+   subcommands or plugins (certonly, renew, install, register, nginx,
+   apache, standalone, webroot, etc.)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+logger: unrecognized option '--------'
+
+Usage:
+ logger [options] [<message>]
+
+Enter messages into the system log.
+
+Options:
+ -i                       log the logger command's PID
+     --id[=<id>]          log the given <id>, or otherwise the PID
+ -f, --file <file>        log the contents of this file
+ -e, --skip-empty         do not log empty lines when processing files
+     --no-act             do everything except the write the log
+ -p, --priority <prio>    mark given message with this priority
+     --octet-count        use rfc6587 octet counting
+     --prio-prefix        look for a prefix on every line read from stdin
+ -s, --stderr             output message to standard error as well
+ -S, --size <size>        maximum size for a single message
+ -t, --tag <tag>          mark every line with this tag
+ -n, --server <name>      write to this remote syslog server
+ -P, --port <number>      use this UDP port
+ -T, --tcp                use TCP only
+ -d, --udp                use UDP only
+     --rfc3164            use the obsolete BSD syslog protocol
+     --rfc5424[=<snip>]   use the syslog protocol (the default for remote);
+                            <snip> can be notime, or notq, and/or nohost
+     --msgid <msgid>      set rfc5424 message id field
+ -u, --socket <socket>    write to this Unix socket
+     --socket-errors[=<on|off|auto>]
+                          print connection errors when using Unix sockets
+     --journald[=<file>]  write journald entry
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see logger(1).
+<13>Mar 30 17:45:19 root: Requesting SSL certificate
+logger: unrecognized option '--non-interactive'
+
+Usage:
+ logger [options] [<message>]
+
+Enter messages into the system log.
+
+Options:
+ -i                       log the logger command's PID
+     --id[=<id>]          log the given <id>, or otherwise the PID
+ -f, --file <file>        log the contents of this file
+ -e, --skip-empty         do not log empty lines when processing files
+     --no-act             do everything except the write the log
+ -p, --priority <prio>    mark given message with this priority
+     --octet-count        use rfc6587 octet counting
+     --prio-prefix        look for a prefix on every line read from stdin
+ -s, --stderr             output message to standard error as well
+ -S, --size <size>        maximum size for a single message
+ -t, --tag <tag>          mark every line with this tag
+ -n, --server <name>      write to this remote syslog server
+ -P, --port <number>      use this UDP port
+ -T, --tcp                use TCP only
+ -d, --udp                use UDP only
+     --rfc3164            use the obsolete BSD syslog protocol
+     --rfc5424[=<snip>]   use the syslog protocol (the default for remote);
+                            <snip> can be notime, or notq, and/or nohost
+     --msgid <msgid>      set rfc5424 message id field
+ -u, --socket <socket>    write to this Unix socket
+     --socket-errors[=<on|off|auto>]
+                          print connection errors when using Unix sockets
+     --journald[=<file>]  write journald entry
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see logger(1).
+<13>Mar 30 17:45:41 root: Cert successfully generated!
+logger: unrecognized option '-------'
+
+Usage:
+ logger [options] [<message>]
+
+Enter messages into the system log.
+
+Options:
+ -i                       log the logger command's PID
+     --id[=<id>]          log the given <id>, or otherwise the PID
+ -f, --file <file>        log the contents of this file
+ -e, --skip-empty         do not log empty lines when processing files
+     --no-act             do everything except the write the log
+ -p, --priority <prio>    mark given message with this priority
+     --octet-count        use rfc6587 octet counting
+     --prio-prefix        look for a prefix on every line read from stdin
+ -s, --stderr             output message to standard error as well
+ -S, --size <size>        maximum size for a single message
+ -t, --tag <tag>          mark every line with this tag
+ -n, --server <name>      write to this remote syslog server
+ -P, --port <number>      use this UDP port
+ -T, --tcp                use TCP only
+ -d, --udp                use UDP only
+     --rfc3164            use the obsolete BSD syslog protocol
+     --rfc5424[=<snip>]   use the syslog protocol (the default for remote);
+                            <snip> can be notime, or notq, and/or nohost
+     --msgid <msgid>      set rfc5424 message id field
+ -u, --socket <socket>    write to this Unix socket
+     --socket-errors[=<on|off|auto>]
+                          print connection errors when using Unix sockets
+     --journald[=<file>]  write journald entry
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see logger(1).
+<13>Mar 30 17:45:52 root: Updating configuration files
+<13>Mar 30 17:45:52 root: Configuring /usr/local/red5pro/conf/jee-container.xml..
+<13>Mar 30 17:45:53 root: Configuring /usr/local/red5pro/conf/red5.properties..
+<13>Mar 30 17:45:53 root: Red5 Pro SSL configuration complete!. Please restart server for changes to take effect.
+<13>Mar 30 17:45:56 root: Red5 Pro service was found at /lib/systemd/system/red5pro.service.
+<13>Mar 30 17:45:56 root: Attempting to restart Red5 Pro service
